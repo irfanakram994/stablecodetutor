@@ -51,8 +51,8 @@ The Interactive Coding Tutor is a web application that assists novice programmer
 11. Code of Stablecode ai model
 
 ---------------------------------------------------------------
-    ```
-from transformers import AutoModelForCausalLM, AutoTokenizer
+  
+  ```from transformers import AutoModelForCausalLM, AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained("stabilityai/stablecode-completion-alpha-3b")
 model = AutoModelForCausalLM.from_pretrained(
   "stabilityai/stablecode-completion-alpha-3b",
@@ -67,7 +67,7 @@ tokens = model.generate(
   temperature=0.2,
   do_sample=True,
 )
-print(tokenizer.decode(tokens[0], skip_special_tokens=True))
+print(tokenizer.decode(tokens[0], skip_special_tokens=True))```
 
-    ```
+ 
 --------------------------------------------------------
