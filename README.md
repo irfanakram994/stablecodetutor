@@ -49,6 +49,8 @@ The Interactive Coding Tutor is a web application that assists novice programmer
 9. Deploy the application to a web server and make it accessible to users.
 10. I have deployed it on streamlit.
 11. Code of Stablecode ai model
+
+---------------------------------------------------------------
     ```
 from transformers import AutoModelForCausalLM, AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained("stabilityai/stablecode-completion-alpha-3b")
@@ -68,3 +70,4 @@ tokens = model.generate(
 print(tokenizer.decode(tokens[0], skip_special_tokens=True))
 
     ```
+--------------------------------------------------------
